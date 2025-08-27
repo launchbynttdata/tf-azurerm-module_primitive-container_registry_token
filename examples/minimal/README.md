@@ -17,7 +17,7 @@ No providers.
 | <a name="module_resource_names"></a> [resource\_names](#module\_resource\_names) | terraform.registry.launch.nttdata.com/module_library/resource_name/launch | ~> 2.0 |
 | <a name="module_resource_group"></a> [resource\_group](#module\_resource\_group) | terraform.registry.launch.nttdata.com/module_primitive/resource_group/azurerm | ~> 1.0 |
 | <a name="module_container_registry"></a> [container\_registry](#module\_container\_registry) | terraform.registry.launch.nttdata.com/module_primitive/container_registry/azurerm | ~> 2.0 |
-| <a name="module_scope_map"></a> [scope\_map](#module\_scope\_map) | git::https://github.com/launchbynttdata/tf-azurerm-module_primitive-container_registry_scope_map.git | feature!/init |
+| <a name="module_scope_map"></a> [scope\_map](#module\_scope\_map) | terraform.registry.launch.nttdata.com/module_primitive/container_registry_scope_map/azurerm | ~> 1.0 |
 | <a name="module_token"></a> [token](#module\_token) | ../.. | n/a |
 
 ## Resources

@@ -51,10 +51,8 @@ module "container_registry" {
 }
 
 module "scope_map" {
-  source = "git::https://github.com/launchbynttdata/tf-azurerm-module_primitive-container_registry_scope_map.git?ref=feature!/init"
-  # Replace this source once the scope_map module is published
-  # source  = "terraform.registry.launch.nttdata.com/module_primitive/container_registry_scope_map/azurerm"
-  # version = "~> 1.0"
+  source  = "terraform.registry.launch.nttdata.com/module_primitive/container_registry_scope_map/azurerm"
+  version = "~> 1.0"
 
   name                    = module.resource_names["scope_map"].minimal_random_suffix_without_any_separators
   resource_group_name     = module.resource_group.name
