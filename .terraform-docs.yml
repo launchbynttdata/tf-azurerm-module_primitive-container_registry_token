@@ -1,3 +1,4 @@
+<<<<<<< before updating
 formatter: "markdown"
 
 output:
@@ -6,7 +7,16 @@ output:
 
 sort:
   enabled: false
+=======
+formatter: "markdown table"
+>>>>>>> after updating
 
 sections:
   hide:
     - providers
+<<<<<<< before updating
+=======
+
+sort:
+  enabled: false
+>>>>>>> after updating
