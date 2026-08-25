@@ -32,9 +32,9 @@ func TestComposableComplete(t *testing.T, ctx types.TestContext) {
 
 	tokensClient := clientFactory.NewTokensClient()
 
-	rgName := terraform.Output(t, ctx.TerratestTerraformOptions(), "resource_group_name")
-	registryName := terraform.Output(t, ctx.TerratestTerraformOptions(), "container_registry_name")
-	tokenName := terraform.Output(t, ctx.TerratestTerraformOptions(), "token_name")
+	rgName := terraform.OutputContext(t, context.Background(), ctx.TerratestTerraformOptions(), "resource_group_name")
+	registryName := terraform.OutputContext(t, context.Background(), ctx.TerratestTerraformOptions(), "container_registry_name")
+	tokenName := terraform.OutputContext(t, context.Background(), ctx.TerratestTerraformOptions(), "token_name")
 
 	t.Run("TokenWasCreated", func(t *testing.T) {
 		resp, err := tokensClient.Get(context.TODO(), rgName, registryName, tokenName, nil)
